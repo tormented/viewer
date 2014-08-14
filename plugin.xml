@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.presentation.view"
+    version="1.0.1">
+    <name>PresentationViewer</name>
+    <description>Presentation Viewer Plugin</description>
+    <license>Apache 2.0</license>
+    <repo>https://github.com/tormented/viewer.git</repo>
+    
+    <js-module src="www/PresentationViewer.js" name="PresentationViewer">
+        <clobbers target="cordova.plugins.PresentationViewer" />
+    </js-module>
+    
+    <!-- android -->
+    <platform name="android">
+        
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="PresentationViewer">
+                <param name="android-package" value="com.presentation.view.PresentationViewer" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        
+        <source-file src="src/android/PresentationViewer.java" target-dir="src/com/presentation/view" />
+        <source-file src="src/android/PresentationView.java" target-dir="src/com/presentation/view" />
+        <source-file src="src/android/PresentationWebView.java" target-dir="src/com/presentation/view" />
+    </platform>
+    
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="PresentationViewer">
+                <param name="ios-package" value="PresentationViewer" onload="true" />
+            </feature>
+        </config-file>
+        
+        <header-file src="src/ios/PresentationViewer.h" />
+        <source-file src="src/ios/PresentationViewer.m" />
+        <header-file src="src/ios/PresentationView.h" />
+        <source-file src="src/ios/PresentationView.m" />
+        <header-file src="src/ios/PresentationViewController.h" />
+        <source-file src="src/ios/PresentationViewController.m" />
+        <resource-file src="src/ios/PresentationViewController.xib" />
+        <resource-file src="src/ios/PresentationViewController_iPhone.xib" />
+    </platform>
+    
+</plugin>

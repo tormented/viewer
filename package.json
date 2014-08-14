@@ -1,0 +1,7 @@
+{
+    "version": "1.0.1",
+    "name": "com.presentation.view",
+    "cordova_name": "PresentationViewer",
+    "description": "Presentation Viewer Plugin",
+    "repo": "https://github.com/tormented/viewer.git"
+}
