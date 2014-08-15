@@ -41,8 +41,6 @@
         <source-file src="src/ios/PresentationView.m" />
         <header-file src="src/ios/PresentationViewController.h" />
         <source-file src="src/ios/PresentationViewController.m" />
-        <resource-file src="src/ios/PresentationViewController.xib" />
-        <resource-file src="src/ios/PresentationViewController_iPhone.xib" />
     </platform>
     
 </plugin>
