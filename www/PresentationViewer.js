@@ -19,7 +19,7 @@ var PresentationViewer = {
 		}
 	},
 	_presentationViewingErrorHandler: function(message){
-		return this.trigger('error', this);
+		console.log(message);
 	},
 	closePresentation: function(){
 
