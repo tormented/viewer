@@ -35,8 +35,8 @@
             </feature>
         </config-file>
 
-        <resource-file src="src/ios/PresentationViewController.xib" />
-        <resource-file src="src/ios/PresentationViewController_iPhone.xib" />
+        <source-file src="src/ios/PresentationViewController.xib" />
+        <source-file src="src/ios/PresentationViewController_iPhone.xib" />
         
         <header-file src="src/ios/PresentationViewer.h" />
         <source-file src="src/ios/PresentationViewer.m" />
