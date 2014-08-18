@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Qap, Inc. All rights reserved.
 //
 
-#import "CDVPlugin.h"
+#import <Cordova/CDVPlugin.h>
 #import "PresentationViewController.h"
 
 @interface PresentationViewer : CDVPlugin <PresentationViewControllerDelegate>

@@ -7,7 +7,7 @@
 //
 
 #import "PresentationViewController.h"
-#import "PDFViewController.h"
+//#import "PDFViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface PresentationViewController ()
@@ -108,12 +108,12 @@
 
 - (void)openPdfViewerWithURL:(NSURL *)url
 {
-    NSString *nibName = [self isIpad] ? @"PDFViewController" : @"PDFViewController_iPhone";
-    PDFViewController *pdfViewer = [[PDFViewController alloc] initWithNibName:nibName bundle:nil];
-    [pdfViewer setUrlToPDF:url];
-    [self presentViewController:pdfViewer animated:YES completion:^{
-        [pdfViewer release];
-    }];
+    //NSString *nibName = [self isIpad] ? @"PDFViewController" : @"PDFViewController_iPhone";
+    //PDFViewController *pdfViewer = [[PDFViewController alloc] initWithNibName:nibName bundle:nil];
+    //[pdfViewer setUrlToPDF:url];
+    //[self presentViewController:pdfViewer animated:YES completion:^{
+    //    [pdfViewer release];
+    //}];
 }
 
 - (BOOL)requestIsForOpeningPdfFromURL:(NSURLRequest *)request
